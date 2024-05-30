@@ -1,19 +1,27 @@
-from model.constant.requestParameterValueConstant import PARAMETER_STRING_VALUE
+from model.constant.requestParameterValueConstant import PARAMETER_STRING_VALUE,PARAMETER_EMAIL_VALUE
 from model.enum.dataTypeEnum import DataTypeEnum
 from model.enum.requestParameterTypeEnum import RequestParameterTypeEnum
 from model.enum.requestTypeEnum import RequestTypeEnum
+from model.enum.parameterFormatEnum import ParameterFormatEnum
 
 class ApiDefinitionReader:
             
-    def getAllPossibleValueForParameter(self, parameterType):
-        if(parameterType == DataTypeEnum.STRING.value):            
-            return PARAMETER_STRING_VALUE      
-    
+    def getAllPossibleValueForParameter(self, parameterType, parameterFormat):
+        if(parameterType == DataTypeEnum.STRING.value):
+            if parameterFormat is not None:
+                if ParameterFormatEnum.EMAIL.value == parameterFormat:
+                    return PARAMETER_EMAIL_VALUE 
+            else:
+                return PARAMETER_STRING_VALUE 
+                
     def getTestDataForQueryParameters(self, parameters):      
         queryParameters = [queryParameter for queryParameter in parameters if queryParameter['in'] == RequestParameterTypeEnum.QUERY.value]
         queryParameterTestDat = {}
         for parameter in queryParameters:
-            queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'])
+            if parameter['schema'].get("format") is not None:             
+                queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'],parameter['schema']['format'])
+            else:
+                queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'],None)                
         return queryParameterTestDat    
     
     def getUrlDic(self, data):
