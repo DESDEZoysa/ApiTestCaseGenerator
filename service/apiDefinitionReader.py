@@ -1,13 +1,16 @@
-import model.constant.requestParameterValueConstant as requestParameterValueConstant
+from model.constant.requestParameterValueConstant import PARAMETER_STRING_VALUE
+from model.enum.dataTypeEnum import DataTypeEnum
+from model.enum.requestParameterTypeEnum import RequestParameterTypeEnum
+from model.enum.requestTypeEnum import RequestTypeEnum
 
 class ApiDefinitionReader:
             
     def getAllPossibleValueForParameter(self, parameterType):
-        if(parameterType == "string"):
-            return requestParameterValueConstant.PARAMETER_STRING_VALUE        
+        if(parameterType == DataTypeEnum.STRING.value):            
+            return PARAMETER_STRING_VALUE      
     
     def getTestDataForQueryParameters(self, parameters):      
-        queryParameters = [queryParameter for queryParameter in parameters if queryParameter["in"] == "query"]
+        queryParameters = [queryParameter for queryParameter in parameters if queryParameter['in'] == RequestParameterTypeEnum.QUERY.value]
         queryParameterTestDat = {}
         for parameter in queryParameters:
             queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'])
@@ -15,9 +18,9 @@ class ApiDefinitionReader:
     
     def getUrlDic(self, data):
         requestDic = {
-            'get': [],
-            'post': [],
-            'put': []
+            RequestTypeEnum.GET.value: [],
+            RequestTypeEnum.POST.value: [],
+            RequestTypeEnum.PUT.value: []
         } 
         baseUrl = data['servers'][0]['url']
         paths = data['paths']    

@@ -24,7 +24,7 @@ class PostmanCollectionGenerator:
         url['query'] = query
         return url 
     
-    def getParameterCombinationList(self, input_data):
+    def getParameterCombinationList(self, input_data):        
         keys = list(input_data.keys())
         lists = [input_data[key] for key in keys]
         combinations = list(itertools.product(*lists))

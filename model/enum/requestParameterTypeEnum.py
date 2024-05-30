@@ -1,4 +1,4 @@
 from enum import Enum
 
-class ParameterTypeEnum(Enum):
-    QUERY='query'
+class RequestParameterTypeEnum(Enum):
+    QUERY="query"
