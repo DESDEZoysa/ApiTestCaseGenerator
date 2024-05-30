@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "https://testifi-api-tester.onrender.com",
+      "url": "http://localhost:8091",
       "description": "Generated server url"
     }
   ],
@@ -18,6 +18,15 @@
         ],
         "operationId": "getDetail",
         "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          },
           {
             "name": "text1",
             "in": "query",
