@@ -1,6 +1,7 @@
 from model.constant.requestParameterValueConstant import PARAMETER_STRING_VALUE
 from model.enum.dataTypeEnum import DataTypeEnum
 from model.enum.requestParameterTypeEnum import RequestParameterTypeEnum
+from model.enum.requestTypeEnum import RequestTypeEnum
 
 class ApiDefinitionReader:
             
@@ -17,9 +18,9 @@ class ApiDefinitionReader:
     
     def getUrlDic(self, data):
         requestDic = {
-            'get': [],
-            'post': [],
-            'put': []
+            RequestTypeEnum.GET.value: [],
+            RequestTypeEnum.POST.value: [],
+            RequestTypeEnum.PUT.value: []
         } 
         baseUrl = data['servers'][0]['url']
         paths = data['paths']    
