@@ -22,6 +22,8 @@ class PostmanCollectionGenerator:
         url['host'] = parsed_url.hostname.split('.')
         url['path'] = parsed_url.path[1:].split('/')
         url['query'] = query
+        if parsed_url.port is not None:
+            url['port'] = parsed_url.port
         return url 
     
     def getParameterCombinationList(self, input_data):        
