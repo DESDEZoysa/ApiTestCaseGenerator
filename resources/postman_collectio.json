@@ -1,0 +1,4909 @@
+{
+    "info": {
+        "name": "OpenAPI definition",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "get_/test/getDetail_TEST_0",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_1",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_2",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_3",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_4",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_5",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_6",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_7",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_8",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_9",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_10",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_11",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_12",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=None&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": null
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_13",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_14",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_15",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_16",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_17",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_18",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_19",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_20",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_21",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_22",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_23",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_24",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_25",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": ""
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_26",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_27",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_28",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_29",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_30",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_31",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_32",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_33",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_34",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_35",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_36",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_37",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_38",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  leading space&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  leading space"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_39",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_40",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_41",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_42",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_43",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_44",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_45",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_46",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_47",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_48",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_49",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_50",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_51",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=trailing space  &key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "trailing space  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_52",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_53",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_54",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_55",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_56",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_57",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_58",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_59",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_60",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_61",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_62",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_63",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_64",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=  both leading and trailing  &key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "  both leading and trailing  "
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_65",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_66",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_67",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_68",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_69",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_70",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_71",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_72",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_73",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_74",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_75",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_76",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_77",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Hello\nWorld&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Hello\nWorld"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_78",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_79",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_80",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_81",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_82",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_83",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_84",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_85",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_86",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_87",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_88",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_89",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_90",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\tTabbed string&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\tTabbed string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_91",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_92",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_93",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_94",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_95",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_96",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_97",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_98",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_99",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_100",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_101",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_102",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_103",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Special characters: !@#$%^&*()_+&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_104",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_105",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_106",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_107",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_108",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_109",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_110",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_111",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_112",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_113",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_114",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_115",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_116",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=1234567890&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "1234567890"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_117",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_118",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_119",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_120",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_121",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_122",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_123",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_124",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_125",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_126",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_127",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_128",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_129",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=\u3053\u3093\u306b\u3061\u306f&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_130",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_131",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_132",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_133",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_134",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_135",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_136",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_137",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_138",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_139",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_140",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_141",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_142",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Quote: \"Double quotes\" and 'Single quotes'&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_143",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_144",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_145",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_146",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_147",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_148",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_149",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_150",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_151",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_152",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_153",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_154",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_155",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Backslash: \\&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Backslash: \\"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_156",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=None",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_157",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_158",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=  leading space",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  leading space"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_159",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=trailing space  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "trailing space  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_160",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=  both leading and trailing  ",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "  both leading and trailing  "
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_161",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=Hello\nWorld",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Hello\nWorld"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_162",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=\tTabbed string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\tTabbed string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_163",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=Special characters: !@#$%^&*()_+",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Special characters: !@#$%^&*()_+"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_164",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=1234567890",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "1234567890"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_165",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=\u3053\u3093\u306b\u3061\u306f",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "\u3053\u3093\u306b\u3061\u306f"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_166",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=Quote: \"Double quotes\" and 'Single quotes'",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Quote: \"Double quotes\" and 'Single quotes'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_167",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=Backslash: \\",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Backslash: \\"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get_/test/getDetail_TEST_168",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "row": "https://testifi-api-tester.onrender.com/test/getDetail?key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string&key=Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string",
+                    "protocol": "https",
+                    "host": [
+                        "testifi-api-tester",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "test",
+                        "getDetail"
+                    ],
+                    "query": [
+                        {
+                            "key": "text1",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        },
+                        {
+                            "key": "text2",
+                            "value": "Long stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong stringLong string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

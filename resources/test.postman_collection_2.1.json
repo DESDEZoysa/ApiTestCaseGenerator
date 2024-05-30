@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "b158af55-d5c9-423e-a8b3-36cb982f9db3",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22185002"
+	},
+	"item": [
+		{
+			"name": "getServerMassage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Content type is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the structure of the response array\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('array');",
+							"  responseData.forEach(function(item) {",
+							"    pm.expect(item).to.be.an('object');",
+							"    pm.expect(item.id).to.exist.and.to.be.a('number');",
+							"    pm.expect(item.prompt).to.exist.and.to.be.a('string');",
+							"    pm.expect(item.initialChoicesText).to.exist.and.to.be.a('string');",
+							"    pm.expect(item.updatedChoicesText).to.exist.and.to.be.a('string');",
+							"  });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Id is a non-negative integer\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  responseData.forEach(function(item) {",
+							"    pm.expect(item.id).to.be.a('number').and.to.be.at.least(0);",
+							"  });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Prompt, initialChoicesText, and updatedChoicesText are non-empty strings\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('array');",
+							"  responseData.forEach(function(item) {",
+							"    pm.expect(item.prompt).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Prompt should not be empty\");",
+							"    pm.expect(item.initialChoicesText).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Initial choices text should not be empty\");",
+							"    pm.expect(item.updatedChoicesText).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Updated choices text should not be empty\");",
+							"  });",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://testifi-api-tester.onrender.com/serverMessage?tabName=a",
+					"protocol": "https",
+					"host": [
+						"testifi-api-tester",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"serverMessage"
+					],
+					"query": [
+						{
+							"key": "tabName",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://testifi-api-tester.onrender.com/test/getByEmai?email=erangas@embla.asia",
+					"protocol": "https",
+					"host": [
+						"testifi-api-tester",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"test",
+						"getByEmai"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "erangas@embla.asia"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
