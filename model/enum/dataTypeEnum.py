@@ -1,6 +1,6 @@
 from enum import Enum
 
-class parameterDataTypeEnum(Enum):
-    String,
-    Number
+class DataTypeEnum(Enum):
+    STRING = "string"
+    NUBMER = "number"
 
