@@ -11,6 +11,130 @@
     }
   ],
   "paths": {
+    "/serverMessage": {
+      "get": {
+        "tags": [
+          "server-message-controller"
+        ],
+        "operationId": "get",
+        "parameters": [
+          {
+            "name": "tabName",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Alert",
+                "Event",
+                "FalsePositive"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ServerMessageDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "server-message-controller"
+        ],
+        "operationId": "update",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ServerMessageDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerMessageDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "server-message-controller"
+        ],
+        "operationId": "create",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ServerMessageDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerMessageDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/test/getDetail": {
       "get": {
         "tags": [
@@ -28,7 +152,20 @@
             }
           },
           {
-            "name": "text1",
+            "name": "enumField",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Alert",
+                "Event",
+                "FalsePositive"
+              ]
+            }
+          },
+          {
+            "name": "plainText1",
             "in": "query",
             "required": true,
             "schema": {
@@ -36,7 +173,7 @@
             }
           },
           {
-            "name": "text2",
+            "name": "plainText2",
             "in": "query",
             "required": true,
             "schema": {
@@ -69,6 +206,50 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "test-controller"
+        ],
+        "operationId": "getDetailPost",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -76,6 +257,40 @@
     "schemas": {
       "ErrorResponse": {
         "type": "object"
+      },
+      "ServerMessageDto": {
+        "required": [
+          "prompt"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "description": "primary key of the table",
+            "format": "int32",
+            "example": 25
+          },
+          "prompt": {
+            "pattern": "^[A-Za-z0-9+_.-]+@(.+)$",
+            "type": "string",
+            "description": "prompt value",
+            "example": "aB2"
+          },
+          "initialChoicesText": {
+            "pattern": "^(1|0|2)$",
+            "type": "string",
+            "description": "initialChoicesText value which can be either '1' or '0'",
+            "example": "1"
+          },
+          "updatedChoicesText": {
+            "pattern": "^(1|0|2)$",
+            "type": "string",
+            "description": "updatedChoicesText value which can be either '1' or '0'",
+            "example": "1"
+          }
+        }
       }
     }
   }
