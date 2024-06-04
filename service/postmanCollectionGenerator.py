@@ -44,7 +44,7 @@ class PostmanCollectionGenerator:
         if requestObj['queryParameterTestData'] is not None:
             for index, parameterCombination in enumerate(self.getParameterCombinationList(requestObj['queryParameterTestData'])):
                 item = {}
-                item['name'] = requestObj['name']+"_TEST_"+str(index)     
+                item['name'] = requestObj['name'][1:]+"/TEST_"+str(index)     
                 item['request'] =  self.getRequestObjFroPostmanCollection(requestObj,method,parameterCombination,'query') 
                 requestList.append(item)     
         return requestList     

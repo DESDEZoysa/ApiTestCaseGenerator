@@ -11,6 +11,8 @@ class ApiDefinitionReader:
             if parameterFormat is not None:
                 if ParameterFormatEnum.EMAIL.value == parameterFormat:
                     return PARAMETER_EMAIL_VALUE 
+                else:
+                    return PARAMETER_STRING_VALUE
             else:
                 return PARAMETER_STRING_VALUE 
                 
@@ -20,6 +22,8 @@ class ApiDefinitionReader:
         for parameter in queryParameters:
             if parameter['schema'].get("format") is not None:             
                 queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'],parameter['schema']['format'])
+            elif parameter['schema'].get("enum") is not None: 
+                queryParameterTestDat[parameter['name']] = parameter['schema'].get("enum")
             else:
                 queryParameterTestDat[parameter['name']] = self.getAllPossibleValueForParameter(parameter['schema']['type'],None)                
         return queryParameterTestDat    
@@ -35,7 +39,7 @@ class ApiDefinitionReader:
         for url in list(paths.keys()):     
             methodDic = paths[url]  
             for method in list(methodDic.keys()):            
-                requestDetails = {'url':baseUrl+url,'name':method+'_'+url} 
+                requestDetails = {'url':baseUrl+url,'name':url+"/"+method} 
                 if methodDic[method].get("parameters") is not None: 
                     requestDetails['queryParameterTestData'] = self.getTestDataForQueryParameters(methodDic[method].get("parameters"))
                 requestDic[method].append(requestDetails) 
