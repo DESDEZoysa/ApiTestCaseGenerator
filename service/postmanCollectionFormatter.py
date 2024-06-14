@@ -1,15 +1,14 @@
-import json
 from collections import defaultdict
 
 class PostmanCollectionFormatter:
     
     def formatPostmanCollection(self, postmanCollection):        
-        nested_dict = self.build_nested_dict(postmanCollection["item"])
-        nested_list = self.dict_to_nested_list(nested_dict)
+        nested_dict = self.buildNestedDict(postmanCollection["item"])
+        nested_list = self.dictToNestedList(nested_dict)
         postmanCollection["item"] = nested_list
         return postmanCollection
     
-    def build_nested_dict(self, itemList):
+    def buildNestedDict(self, itemList):
         nested_dict = lambda: defaultdict(nested_dict)
         root = nested_dict()
         for item in itemList:
@@ -20,21 +19,39 @@ class PostmanCollectionFormatter:
             d[parts[-1]] = item
         return root
     
-    def dict_to_nested_list(self, nested_dict):
+    def dictToNestedList(self, nested_dict):
         result = []
         for key, value in nested_dict.items():
             if isinstance(value, defaultdict):
                 result.append({
                     "name": key,
-                    "item": self.dict_to_nested_list(value)
+                    "item": self.dictToNestedList(value)
                 })
             else:
                 formatted_item = {
                     "name": key,
-                    "request": value["request"]
+                    "request": value["request"],
+                    "respons":value["respons"],
+                    "expectedStatus":value["expectedStatus"],
+                    "event":self.getEventArray()
                 }
                 result.append(formatted_item)
         return result
+    
+    def getEventArray(self):
+        event = [
+            {
+                "listen": "test",
+                "script": {
+                    "type": "text/javascript",
+                    "exec": []
+                }
+            }
+        ]
+        return event    
+    
+        
+        
         
 
             
