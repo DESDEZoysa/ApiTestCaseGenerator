@@ -1,8 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "OpenAPI definition",
-    "version": "v0"
+    "title": "monitor server"
   },
   "servers": [
     {
@@ -10,7 +9,209 @@
       "description": "Generated server url"
     }
   ],
+  "security": [
+    {
+      "Login": []
+    }
+  ],
   "paths": {
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "operationId": "register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppUserDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthenticationDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "summary": "can be get Bearer token for the user by providing correct username and password",
+        "operationId": "authenticate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDetailsDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/test/getDetail04": {
+      "get": {
+        "tags": [
+          "test-controller"
+        ],
+        "operationId": "getDetailNum1",
+        "parameters": [
+          {
+            "name": "num",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data is valid",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid email format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/test/getDetail02": {
+      "get": {
+        "tags": [
+          "test-controller"
+        ],
+        "operationId": "getDetailDateTime",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data is valid",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid email format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/test/getDetail01": {
+      "get": {
+        "tags": [
+          "test-controller"
+        ],
+        "operationId": "getContactDetails",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid data format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Data is valid",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TestDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/serverMessage": {
       "get": {
         "tags": [
@@ -33,10 +234,10 @@
           }
         ],
         "responses": {
-          "500": {
-            "description": "Internal Server Error",
+          "400": {
+            "description": "Invalid tabName",
             "content": {
-              "*/*": {
+              "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ErrorResponse"
                 }
@@ -44,7 +245,7 @@
             }
           },
           "200": {
-            "description": "OK",
+            "description": "Successfully retrieved server messages",
             "content": {
               "*/*": {
                 "schema": {
@@ -57,240 +258,110 @@
             }
           }
         }
-      },
-      "put": {
-        "tags": [
-          "server-message-controller"
-        ],
-        "operationId": "update",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ServerMessageDto"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ServerMessageDto"
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "server-message-controller"
-        ],
-        "operationId": "create",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ServerMessageDto"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ServerMessageDto"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/test/getDetail": {
-      "get": {
-        "tags": [
-          "test-controller"
-        ],
-        "operationId": "getDetail",
-        "parameters": [
-          {
-            "name": "email",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "email"
-            }
-          },
-          {
-            "name": "enumField",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "Alert",
-                "Event",
-                "FalsePositive"
-              ]
-            }
-          },
-          {
-            "name": "plainText1",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "plainText2",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "type": "object",
-                  "additionalProperties": {
-                    "type": "object"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "test-controller"
-        ],
-        "operationId": "getDetailPost",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "type": "object",
-                  "additionalProperties": {
-                    "type": "object"
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     }
   },
   "components": {
     "schemas": {
-      "ErrorResponse": {
-        "type": "object"
-      },
-      "ServerMessageDto": {
-        "required": [
-          "prompt"
-        ],
+      "AppUserDto": {
         "type": "object",
         "properties": {
           "id": {
-            "maximum": 2147483647,
-            "minimum": 0,
             "type": "integer",
-            "description": "primary key of the table",
-            "format": "int32",
-            "example": 25
+            "format": "int32"
           },
-          "prompt": {
-            "pattern": "^[A-Za-z0-9+_.-]+@(.+)$",
-            "type": "string",
-            "description": "prompt value",
-            "example": "aB2"
+          "userName": {
+            "type": "string"
           },
-          "initialChoicesText": {
-            "pattern": "^(1|0|2)$",
-            "type": "string",
-            "description": "initialChoicesText value which can be either '1' or '0'",
-            "example": "1"
+          "password": {
+            "type": "string"
           },
-          "updatedChoicesText": {
-            "pattern": "^(1|0|2)$",
+          "userRole": {
             "type": "string",
-            "description": "updatedChoicesText value which can be either '1' or '0'",
-            "example": "1"
+            "enum": [
+              "USER",
+              "ADMIN"
+            ]
           }
         }
+      },
+      "AuthenticationDto": {
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string"
+          },
+          "refreshToken": {
+            "type": "string"
+          }
+        }
+      },
+      "LoginDetailsDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "TestDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "plainText": {
+            "type": "string"
+          },
+          "dateTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "ServerMessageDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "initialChoicesText": {
+            "type": "string"
+          },
+          "updatedChoicesText": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "Login": {
+        "type": "http",
+        "in": "header",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   }
